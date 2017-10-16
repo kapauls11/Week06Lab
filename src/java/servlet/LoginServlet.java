@@ -23,11 +23,22 @@ import service_class.User;
  */
 public class LoginServlet extends HttpServlet
 {
+    public static String scheme;
+    public static String serverName;
+    public static String port;
+    public static String uri;
+    public static String parameter;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException
     {
+        scheme = request.getScheme() + "://"; //http://
+        serverName = request.getServerName(); //example
+        port = ":" + request.getServerPort(); //:8080
+        uri = request.getRequestURI();        //people
+        parameter = request.getQueryString() != null ? "?" + request.getQueryString() : ""; // "?" + "lastname=Fox&age=30"
+        
         
         Cookie[] cookies = request.getCookies();
         String cookieName = "userCookie";

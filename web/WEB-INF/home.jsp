@@ -5,7 +5,14 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="sait" uri="/WEB-INF/tlds/sait.tld" %>
+
+<sait:debug>
+    Remote Host: ${pageContext.request.remoteHost}<br />
+    Session ID: ${pageContext.session.id}
+</sait:debug>
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
