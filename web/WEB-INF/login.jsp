@@ -1,9 +1,3 @@
-<%-- 
-    Document   : login
-    Created on : Oct 2, 2017, 8:14:41 AM
-    Author     : Administrator
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <%@ taglib prefix="login" tagdir="/WEB-INF/tags" %>

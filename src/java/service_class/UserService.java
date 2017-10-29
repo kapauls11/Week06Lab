@@ -1,21 +1,9 @@
 package service_class;
 
-import service_class.User;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- *
- * @author Administrator
- */
 public class UserService
 {
 
-    public UserService()
-    {
+    public UserService(){
 
     }
 
@@ -24,12 +12,12 @@ public class UserService
         User user = new User(username, password);
         if (user.getUsername().equals("adam") && user.getPassword().equals("password"))
         {
-            User userWithNullPass = new User(user.getUsername(), null);
-            return userWithNullPass;
+            User u = new User(user.getUsername(), null);
+            return u;
         } else if (user.getUsername().equals("betty") && user.getPassword().equals("password"))
         {
-            User userWithNullPass = new User(user.getUsername(), null);
-            return userWithNullPass;
+            User u = new User(user.getUsername(), null);
+            return u;
         }
         return null;
     }

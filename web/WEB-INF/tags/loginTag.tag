@@ -1,18 +1,8 @@
-<%-- 
-    Document   : loginTag
-    Created on : Oct 16, 2017, 8:16:38 AM
-    Author     : Administrator
---%>
+<%@tag description="loginTag" pageEncoding="UTF-8"%>
 
-<%@tag description="put the tag description here" pageEncoding="UTF-8"%>
-
-<%-- The list of normal or fragment attributes can be specified here: --%>
 <%@attribute name="username"%>
 <%@attribute name="password"%>
 <%@attribute name="rememberMe"%>
-
-
-<%-- any content can be specified here e.g.: --%>
 
 
 <form action="login" method="post">

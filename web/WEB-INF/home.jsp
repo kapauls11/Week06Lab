@@ -1,9 +1,3 @@
-<%-- 
-    Document   : home
-    Created on : Oct 2, 2017, 8:14:24 AM
-    Author     : Administrator
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="sait" uri="/WEB-INF/tlds/sait.tld" %>
 

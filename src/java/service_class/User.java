@@ -5,11 +5,13 @@
  */
 package service_class;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Administrator
  */
-public class User
+public class User implements Serializable
 {
 
     private String username;
